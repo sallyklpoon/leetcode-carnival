@@ -23,6 +23,12 @@ def two_sum_bf(nums: list, target:int) -> list:
 
 
 def two_sum_v2(nums: list, target:int) -> list:
+    """ WIP -- incomplete solution atm, testing edge cases.
+
+    :param nums:
+    :param target:
+    :return:
+    """
     differences = [target - num for num in nums]    # O(N)
     possible_addends = list(set(nums).intersection(differences))
     return [nums.index(possible_addends[0]), nums.index(possible_addends[1])]

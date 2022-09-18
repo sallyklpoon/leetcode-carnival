@@ -7,6 +7,9 @@ def num_not_in_list(nums: list) -> list:
     """
     Return the numbers not in a list that should contain list length as range.
 
+    Time Complexity: O(N) - one pass each time with list
+    Space Complexity: O(N) - storage of extra list of flags for the numbers
+
     :param nums: list of int
     :return: list of int
 

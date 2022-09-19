@@ -7,7 +7,8 @@ def count_students_bf(students: list, sandwiches: list) -> int:
     """
     Return the count of students who are unable to eat.
 
-    Time Complexity:
+    Time Complexity: O(N^2)
+    Space Complexity: O(1)
 
     :param students: a list of int containing 1 or 0
     :param sandwiches: a list of int containing 1 or 0
@@ -30,8 +31,3 @@ def count_students_bf(students: list, sandwiches: list) -> int:
         else:
             return len(students)
     return len(students)
-
-
-if __name__ == '__main__':
-    print(count_students_bf([1, 1, 0, 0], [0, 1, 0, 1]))
-

@@ -40,8 +40,7 @@ def remove_element(nums: list, val: int) -> int:
         return 0
 
     # sort the list
-    front_i = 0
-    back_i = -1
+    front_i, back_i = 0, -1
     while front_i != len(nums) + back_i:    # stop when indexes meet
         if nums[front_i] != val:
             front_i += 1

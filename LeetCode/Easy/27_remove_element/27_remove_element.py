@@ -39,28 +39,22 @@ def remove_element(nums: list, val: int) -> int:
     if not nums:
         return 0
 
-    # flag the unwanted val
-    for i in range(len(nums)):
-        if nums[i] == val:
-            nums[i] = -1
-
     # sort the list
     front_i = 0
     back_i = -1
     while front_i != len(nums) + back_i:    # stop when indexes meet
-        if nums[front_i] >= 0:
+        if nums[front_i] != val:
             front_i += 1
-        elif nums[front_i] == -1:
-            if nums[back_i] >= 0:
-                nums[front_i] = nums[back_i]
-                nums[back_i] = -1
+        elif nums[front_i] == val:
+            if nums[back_i] != val:
+                nums[front_i], nums[back_i] = nums[back_i], nums[front_i]
             else:
                 back_i -= 1
 
     # count the non-val numbers and return
     output = 0
     for i in range(len(nums)):
-        if nums[i] >= 0:
+        if nums[i] != val:
             output += 1
         else:
             return output

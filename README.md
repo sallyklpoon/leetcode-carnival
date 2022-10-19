@@ -17,6 +17,9 @@ The plan is to eventually spend some time tackling Mediums too!
 ## 🎢 Up-to-date Stats
 
 [![My LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=sallyklpoon&theme=dark)](https://github.com/KnlnKS/leetcode-stats)
+<a href="https://github.com/KnlnKS/leetcode-stats">
+  <img alt="LeetCode Stat Card" src="https://apu5rh8gxk.execute-api.us-east-1.amazonaws.com/default/leetcode-stats?username=sallyklpoon" width="400"/>
+</a>
 
 ## 🤹‍♀️ Suggestions?
 If you have any suggestions or comments about my solutions, feel free to reach out! I'm always learning and am very enthused by self-improvement.

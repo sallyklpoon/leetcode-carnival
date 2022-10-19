@@ -3,7 +3,7 @@
 This repository is a record of my LeetCode Python solutions.
 
 All if not most of my solutions may include:
-* a Brute Force method, usually with the function name ending in `_bf`
+* a brute force method, usually with the function name ending in `_bf`
 * a (hopefully) optimized method
 * Time Complexity of each solution
 * Space Complexity of each solution
@@ -11,6 +11,9 @@ All if not most of my solutions may include:
 
 ## 🎪 The Plan
 Most of the time (right now, during school), I am randomizing my Easy selection of problems.
+
+I often try to think about an optimized solution and implement first, but if I'm really stuck, I'll write down my thoughts in comments first,
+then attempt to implement at least a brute force method.
 
 The plan is to eventually spend some time tackling Mediums too!
 

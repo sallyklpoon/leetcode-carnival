@@ -14,7 +14,8 @@ Most of the time (right now, during school), I am randomizing my Easy selection 
 
 The plan is to eventually spend some time tackling Mediums too!
 
-## 🎢 Up-to-date Stats
+## 🎢 Stats
+*bc widgets are cool*
 
 [![My LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=sallyklpoon&theme=dark)](https://github.com/KnlnKS/leetcode-stats)
 

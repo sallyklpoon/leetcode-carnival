@@ -13,6 +13,7 @@ Recursive strategy?
 Get the most min sum on each row and then take the minimum of the final row.
 
 Needed help on this one!
+https://leetcode.com/problems/minimum-falling-path-sum/solutions/186646/the-art-of-dynamic-programming/
 """
 
 

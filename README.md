@@ -12,9 +12,7 @@ All if not most of my solutions may include:
 ## 🎪 The Plan
 I try to tackle LeetCode dailies right now, to randomize my selection of questions between Easy to Medium and with different types of data structures. This is especially helpful in-between studying for school.
 
-I typically time-block myself for questions -- spending at most 1h. If I do not make any progress in the hour, I will skim some possible solutions and implementations quickly then try to implement the concept myself.
-
-My process is to read the question, then comment at the top with my thought process, thinking to myself. I often try to think about an optimized solution and implement first, but if I'm really stuck, I will attempt to implement at least a brute force method.
+I typically time-block myself for questions -- spending at most 1h. If I do not make any progress in the hour, I will look at some discussion posts to get a hint to nudge me on the right way. I then try to implement using the hint and how I can apply this hint as a solution. Finally, if I truly cannot solve the problem, I will skim some possible solutions and implementations quickly then try to implement the concept myself.
 
 ## 🎢 Stats
 [![My LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=sallyklpoon&theme=dark)](https://github.com/KnlnKS/leetcode-stats)

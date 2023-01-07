@@ -103,5 +103,3 @@ def can_complete_circuit_bf(gas: list, cost: list) -> int:
                 break
             i += 1
     return ans
-
-

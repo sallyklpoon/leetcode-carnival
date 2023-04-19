@@ -23,18 +23,17 @@ from typing import List
 def top_students(positive_feedback: List[str], negative_feedback: List[str], report: List[str],
                  student_id: List[int], k: int) -> List[int]:
     n = len(student_id)
-    pos_map = {word: 3 for word in positive_feedback}
-    neg_map = {word: -1 for word in negative_feedback}
+    word_map = {word: 3 for word in positive_feedback}
+    word_map.update({word: -1 for word in negative_feedback})
     scores = []
 
     for i in range(n):
         score = 0
         for token in report[i].split(' '):
-            if token in pos_map:
-                score += pos_map[token]
-            if token in neg_map:
-                score += neg_map[token]
+            if token in word_map:
+                score += word_map[token]
         scores.append((student_id[i], score))
+        print(scores)
 
     scores.sort(key=(lambda x: (-x[1], x[0])))
     ans = []

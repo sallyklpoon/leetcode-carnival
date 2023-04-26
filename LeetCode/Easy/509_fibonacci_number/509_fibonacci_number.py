@@ -11,7 +11,9 @@ class SolutionMemo:
             return n
         if n in self.memo:
             return self.memo[n]
-        return self.fib(n - 1) + self.fib(n - 2)
+        ans = self.fib(n - 1) + self.fib(n - 2)
+        self.memo[n] = ans
+        return ans
 
 
 class SolutionRecursive:

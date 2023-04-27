@@ -54,4 +54,4 @@ def matrix_score(grid: list) -> int:
     return ans
 
 
-print(matrixScore([[0, 0, 1, 1], [1, 0, 1, 0], [1, 1, 0, 0]]))
+print(matrix_score([[0, 0, 1, 1], [1, 0, 1, 0], [1, 1, 0, 0]]))

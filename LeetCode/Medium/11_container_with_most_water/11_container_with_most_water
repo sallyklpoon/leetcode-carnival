@@ -1,0 +1,48 @@
+"""
+BRUTE FORCE
+The max height that can be contained must be as far a part in x axis as possible
+as well as as high as possible in height
+
+for any two sets of bars, the greatest max y height will be the shorter bar
+for a bar, its greatest x distance is going to be the bar furthest from it
+
+we can find each bar's greatest surface area by using its index
+to find the furthest distance either left or right 
+
+we can then return the max of these max area for each bar
+
+map?
+list of tuples, (height, index). sort by height.
+for every bar, if it has bars with height greater, take its own height * abs(own i - other i)
+
+OPTIMIZE
+Use two pointers on left and right.
+The area will always be min height of two bars * the distance between the pointers
+Whichever height is smaller for start or end pointer, we should progress that one
+"""
+
+def maxArea_bf(height) -> int:
+    bars = [(height[i], i) for i in range(len(height))]
+    bars.sort(key=lambda x: x[0])
+    
+    all_max = []
+    for i, bar in enumerate(bars[:-1]):
+        furthest_x = float('-inf')
+        for other_bar in bars[i + 1:]:
+            furthest_x = max(abs(bar[1] - other_bar[1]), furthest_x)
+        max_area = bar[0] * furthest_x
+        all_max.append(max_area)
+    return max(all_max)
+
+
+def maxArea_pointers(height) -> int:
+    l, r = 0, len(height) - 1
+    max_area = float('-inf')
+    while l < r:
+        area = min(height[l], height[r]) * (r - l)
+        max_area = max(area, max_area)
+        if height[l] > height[r]:
+            r -= 1
+        else:
+            l += 1
+    return max_area
